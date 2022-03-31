@@ -1,0 +1,898 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body > * {
+    max-width: 1330px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: mediumblue;
+}
+section #rasm1{
+    margin-top: -8px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 99%;
+}
+.navbar1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navbar1 .navbar2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 930px;
+    margin-right: 30px;
+}
+.navbar1 .navbar2 li{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 10px;
+}
+.navbar2 li a{
+    color: black;
+    text-decoration: none;
+}
+.navbar2 li a:hover{
+    color: blue;
+}
+.navbar1 #img1{
+    margin-left: 10px;
+    display: flex;
+}
+.navbar1 #img2{
+    transform: translateX(-15px);
+}
+#select{
+    transform: translateX(10px);
+    width: 80px;
+    height: 30px;
+    background: rgb(221, 214, 214);
+    border-radius: 10px;
+}
+#img3{
+    transform: translate(2px , 7px);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%
+}
+.navbar1 .fon1{
+    background: rgb(219, 209, 209);
+    border-radius: 50%;
+    transform: translateX(25px);
+}
+.navbar3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navbar3 .navbar4{
+    display: flex;
+    flex-direction: row;align-items: center;
+    width: 100%;
+    height: 45px;
+    background: rgb(243, 235, 235);
+    padding-left: 8px;
+    
+}
+.navbar3 .navbar4  li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    list-style: none;
+}
+.navbar3 .navbar4 li:last-child{
+    border-right: 0px solid black;
+}
+.navbar3 .navbar4  li a {
+    text-decoration:none;
+    text-transform: none;
+    list-style: none;
+    color: rgb(85, 81, 81);
+    width: 75%;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+.navbar3 .navbar4 h1 {
+    width: 110px;
+    height: 45px;
+    background-color: darkblue;
+    margin-right: -85px;
+    margin-left: -5px; 
+    border-top-right-radius: 22.5px;
+    border-bottom-right-radius: 22.5px;   
+}
+.navbar3 .navbar4 p {
+    transform: translateX(-15px);
+    color: cornsilk;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.navbar3 .navbar4 li a:hover{
+    color: blue;
+}
+.boks1 {
+    display: flex;
+    box-sizing: border-box;
+}
+.boks1 .chap-box {
+    width: 75%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.boks1 .chap-box .asosiyxabar {
+    display: flex;
+    width: 100%;
+    height: 280px;
+    position: relative;
+    background-color: #eff2f8;
+    color: #000;
+}
+.boks1 .chap-box .asosiyxabar .imgbx {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+.boks1 .chap-box .asosiyxabar .imgbx img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+.boks1  .asosiyxabar .textcontent {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.taqvim {
+    color: rgba(0,0, 0,0.4);
+    font-size: 12px;
+}
+.boks1 .chap-box .asosiyxabar .textcontent .yangiliknomi {
+    font-size: 22px;
+    font-weight: bold;
+}
+.boks1 .chap-box .asosiyxabar:hover .textcontent .yangiliknomi {
+    color: mediumblue;
+}
+.boks1 .chap-box .asosiyxabar .textcontent .yangilikmatni {
+    color: black;
+}
+.boks1 .sungixabar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+}
+.boks1 .sungixabar .xabar {
+    position: relative;
+    width: 50%;
+    height: 115px;
+    display: flex;
+    margin: 15px 0px;
+}
+.boks1 .sungixabar .xabar .imgbx {
+    width: 170px;
+    height: 100%;
+    position: relative;
+}
+.boks1 .sungixabar .xabar .imgbx img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.boks1 .sungixabar .xabar .textcontent {
+    padding: 0 10px;
+    width: calc(100% - 170px);
+    box-sizing: content-box;
+    position: relative;
+}
+.boks1 .sungixabar .xabar .textcontent::after {
+    width: 90%;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    background-color: rgb(133, 117, 117);
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.boks1 .sungixabar .xabar .textcontent .yangiliknomi {
+    font-size: 16px;
+    font-weight: bold;
+}
+.boks1 .muharrirtanlovi {
+    display: flex;
+    flex-direction: column;
+}
+.boks1 .muharrirtanlovi .topbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cir {
+    display: flex;
+    flex-direction: row;
+}
+ .circle {
+     left: 0;
+     margin: 0 ;
+    width: 10px;
+    height: 10px;
+    border: 6px solid darkblue;
+    border-radius: 50%;
+}
+.boks1 .chap-box .muharrirtanlovi .bottombox {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.boks1 .chap-box .muharrirtanlovi .bottombox .xabar {
+    display: flex ;
+    flex-direction: column;
+    width: 30%;
+    position: relative;
+    margin: 0 auto;
+} 
+.boks1 .chap-box .muharrirtanlovi .bottombox .xabar .imgbx {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.boks1 .chap-box .muharrirtanlovi .bottombox .xabar .imgbx img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.boks1 .ong-box {
+    width: 25%;
+    position: relative;
+    margin:0 20px;
+}
+.boks1 .ong-box .sarlavha {
+    display: flex;
+    flex-direction: row;
+}
+.boks1 .ong-box .sarlavha .circle {
+    width: 8px;
+    height: 8px;
+    border: 5px solid darkblue;
+
+}
+.boks1 .ong-box .sarlavha .sarlavha1 {
+    font-size: 22px;
+    transform: translate(10px , -19px);
+}
+.boks1 .ong-box .koproqxabarlar {
+    padding: 0;
+    margin-top: -25px;
+}
+
+.boks1 .ong-box .koproqxabarlar .xabarmatn i {
+    color: #949aa7;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.boks1 .ong-box .koproqxabarlar .xabarmatn span {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #949aa7;
+}
+.boks1 .ong-box .koproqxabarlar .xabarmatn p {
+    font-size: 17px;
+    letter-spacing: 0.1px;
+    margin-top: 8px;
+    word-spacing: 0.7px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #949aa7;
+}
+.boks1 .ong-box .koproqxabarlar .xabarmatn:hover p {
+    color: rgb(21, 21, 145);
+}
+.boks1 .ong-box  .koproq {
+    width: 100% ;
+    height: 60px;
+    color: black;
+    border-left: 2px solid blue;
+    border-top: 1px solid #e5daf5;
+    border-bottom: 1px solid #e5daf5;
+    border-right: 1px solid #e5daf5;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #e5daf5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.boks1 .ong-box  .koproq .hhh {
+    padding: 14px 30px;
+    font-size: 16px;
+}
+.dolzarbx {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.dolzarbx .circle {
+    transform: translateY(40px);
+}
+.dolzarbx h1 {
+    color: black;
+    font-size: 22px;
+    margin-left: 30px;
+}
+.dolzarbx .bir1 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.dolzarbx .bir1 .saylov {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.dolzarbx .bir1 .saylov img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.dolzarbx .bir1 .saylov a {
+    margin-left: 0px;
+    font-size: 24px;
+    color: black;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.dolzarbx .bir1 .saylov a:hover {
+    color: blue;
+}
+.dolzarbx .bir1 .saylov p {
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgb(49, 47, 47);
+    letter-spacing: .2px;
+    word-spacing: 1.5px;
+}
+
+.dolzarbx .bir1 .xbokslar {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+}
+.dolzarbx .bir1 .xbokslar .bokslar1 {
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin:0 10px;
+    margin-right: 20px;
+}
+.dolzarbx .bir1 .xbokslar .bokslar1 img {
+    margin: 0 10px;
+    width: 100%;
+    height: 70%;
+}
+.dolzarbx .bir1 .xbokslar .bokslar1 a {
+    margin: 10px ;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+.dolzarbx .bir1 .xbokslar .bokslar1 a:hover {
+    color: blue;
+}
+.intervyu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 150px;
+    background: rgb(232, 232, 241);
+}
+.intervyu .circle {
+    transform: translate(20px , 20px);
+}
+.intervyu h1 {
+    transform: translate(45px  , -25px);
+}
+.intervyu .xintervyu {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+}
+.intervyu .xintervyu .intervyu1 {
+    width: 20%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: white;
+}
+.intervyu .xintervyu .intervyu1:nth-child(1){
+    margin-left: 20px;
+}
+.intervyu .xintervyu .intervyu1:nth-child(4){
+    margin-right: 20px;
+}
+.intervyu .xintervyu .intervyu1 img {
+    transform: translate(-40px , -20px);
+    filter: drop-shadow(8px 8px 1px blue);
+}
+.intervyu .xintervyu .intervyu1 a {
+    color: black;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 15px;
+}
+.intervyu .xintervyu .intervyu1 a:hover {
+    color: blue;
+}
+.surishtruv {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.surishtruv .chaplogo {
+    display: flex;
+    flex-direction: row;
+}
+.surishtruv .chaplogo .circle {
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.surishtruv .chaplogo h1 {
+    font-size: 20px;
+}
+.surishtruv .surishtruv1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.surishtruv .surishtruv1 .chap-s {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgb(232, 232, 241);
+    margin-top: 50px;
+}
+.surishtruv .surishtruv1 .chap-s img {
+    width: 90%;
+    margin-top: -30px;
+    filter: drop-shadow(16px 16px 1px white);
+}
+.surishtruv .surishtruv1 .chap-s a{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-top: 25px;
+    letter-spacing: 0.8px;
+    word-spacing: 2px;
+}
+
+
+
+.surishtruv .surishtruv1 .ong-s {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.surishtruv .surishtruv1 .ong-s .mavzu-s {
+    width: 100%;
+    height: 24%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 23px;
+}
+.surishtruv .surishtruv1 .ong-s .mavzu-s img {
+    height: 95%;
+    width: 21%;
+    object-fit: cover;
+}
+.surishtruv .surishtruv1 .ong-s .mavzu-s a {
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.maqolalar {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 140px;
+}
+.maqolalar .chaplogo {
+    display: flex;
+    flex-direction: row;
+}
+.maqolalar .chaplogo .circle {
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.maqolalar .chaplogo h1 {
+    font-size: 20px;
+}
+.maqolalar .maqolalar1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.maqolalar .maqolalar1 .xmaqola {
+    width: 32%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+}
+.maqolalar .maqolalar1 .xmaqola a {
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.maqolalar .maqolalar1 .xmaqola a:hover {
+    color: blue;
+}
+.maqolalar .maqolalar1 .xmaqola p {
+    font-size: 18px;
+    color: #28292bd5;
+    word-spacing: 0.7px;
+}
+.maqolalar .past {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 40px;
+    margin-top: 290px;
+}
+.maqolalar .past img {  
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 40px;
+}
+.maqolalar .past h1 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 18px;
+}
+.biznes {
+    width: 100%;
+    height: 450px;
+    margin-top: 450px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    background-color: #ecf0f7;
+}
+.biznes .biznes1 {
+    width: 23%;
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    margin-top: 40px;
+}
+.biznes .biznes1 a {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 10px 20px;
+    word-spacing: 0.7px;
+}
+.videorasm {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 50px;
+}
+.videorasm .chap-x {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.videorasm .chap-x .chaplogo {
+    display: flex;
+    flex-direction: row;
+    margin-top: -40px;
+}
+.videorasm .chap-x .circle {
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.videorasm .chap-x h1 {
+    font-size: 20px;
+}
+.videorasm .chap-x .video1 {
+    width: 630px;
+    height: 420px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 20px; 
+    background-image: url(../img/banner.jpg);
+}
+.videorasm .chap-x .video1 i {
+    transform: translate(50% , 200px);
+    font-size: 30px;
+    color: rgb(126, 96, 41);
+}
+
+.videorasm .chap-x .video1 p {
+    transform: translate(30px , 250px);
+    color: white;
+    font-size: 24px;
+}
+.videorasm .chap-x .xabar-1 {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.videorasm .chap-x .xabar-1 .xabar-2 {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px;
+}
+.videorasm .chap-x .xabar-1 .xabar-2 .span-v {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.videorasm .chap-x .xabar-1 .xabar-2 .span-v span {
+    margin: 10px 0;
+    font-size: 13px;
+    color: #424447;
+}
+.videorasm .chap-x .xabar-1 .xabar-2 .span-v span:nth-child(2) {
+    font-size: 14px;
+    margin-left: 130px;
+    color: rgba(98, 98, 228, 0.884);
+}
+
+.video1 .chap-x .xabar-1 .xabar-2 .span-v span:nth-child(2) {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #424447;
+}
+
+.videorasm .chap-x .xabar-1 .xabar-2 a {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ilova {
+    width: 95%;
+    height: 300px;
+    margin: 70px 30px;
+    background-color: #949aa7;
+    border-radius: 20px;
+    position: relative;
+}
+.ilova .ilova-x {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 80%;
+    height: 80px;
+    padding-top: 110px;
+    padding-left: 200px;
+    margin: 0 20px;
+}
+.ilova .ilova-x .logokun {
+    width: 170px;
+    height: 80px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: white;
+}
+.ilova .ilova-x .logokun img {
+    width: 120px;
+    height: 60px;
+    margin: 10px 25px;
+    object-fit: cover;
+}
+.ilova .ilova-x .matnkun {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    height: 100px;
+    margin: -10px 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+.ilova .ilova-x .matnkun p:nth-child(1) {
+    font-size: 28px;
+    font-weight: 600;
+    word-spacing: 1px;
+    color: darkblue;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.ilova .ilova-x .matnkun p:nth-child(2) {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-top: -17px;
+    margin-left: 15px;
+}
+.ilova .ilova-x .app , .play {
+    display: flex;
+    flex-direction: row;
+    width: 160px;
+    height: 60px;
+    background-color: #333536;
+    margin: 0 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: .6s ease ;
+    
+}
+.ilova .ilova-x .app  i {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: wheat;
+}
+.ilova .ilova-x .app p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: wheat;
+}
+.ilova .ilova-x .play i {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: wheat;
+}
+.ilova .ilova-x .play p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: wheat;
+}
+.ilova .ilova-x .app:hover {
+    margin-top: -7px ;
+}
+.ilova .ilova-x .play:hover {
+    margin-top: -7px ;
+}
+.footer {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(32, 32, 201, 0.959);
+}
+.footer .tepa-f {
+    width: 100%;
+    height: 20%;
+    background-color:rgba(81, 81, 241, 0.76) ;
+    display: flex;
+    flex-direction: row;
+}
+.footer .tepa-f a {
+    margin: 16px 20px;
+    color: white;
+    font-size: 18px;
+}
+.footer .tepa-f a:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+.footer .tepa-f i {
+    margin-top: 12px;
+    transform: translateX(615px);
+    color:rgb(212, 198, 198) ;
+    font-size: 20px;
+}
+.footer .past-f {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.footer .past-f p {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    font-size: 17px;
+}
+.footer .past-f .icon-f {
+    margin-top: 60px;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+.footer .past-f .icon-f i {
+    color: rgb(212, 198, 198);
+    padding-left: 20px;
+    font-size: 24px;
+    transition: .7s ease;
+}
+.footer .past-f .icon-f i:hover {
+    transform: translateY(-7px);
+    cursor: pointer;
+}
